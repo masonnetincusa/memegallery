@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CE0GRK6CPS"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -8,7 +9,9 @@ gtag('js', new Date());
 
 gtag('config', 'G-CE0GRK6CPS');
 </script>
-  <style>
+  <title>Meme Gallery</title>
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <style>
 .button {
   background-color: #04AA6D; /* Green */
   border: none;
@@ -28,20 +31,48 @@ gtag('config', 'G-CE0GRK6CPS');
 .button5 {background-color: #555555;} /* Black */
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  
-  <title>Meme Gallery</title>
-<!-- Favicon (image that shows up next to the title in the browser tab) -->   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<!-- Font -->  <style>body{font-family:Arial,Helvetica,sans-serif}</style>
-<!-- Logo+Buttons -->  <img src="memegallerylogo.png" width="400" height="100" alt="Meme Gallery logo"> <p align="right"><a href="https://www.masonnet.org"><button class="button button3">MASONNET</button></a> <a href="https://forms.gle/dnu5f2hTgkZ8Y1Dr8"><button class="button button2">Add a meme!</button></a></p>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+  <style>body{font-family:Arial,Helvetica,sans-serif}</style>
+  <img src="https://masonnetincusa.github.io/memegallery/memegallerylogo.png" width="400" height="100" alt="Meme Gallery logo"> <p align="right"><a href="https://www.masonnet.org"><button class="button button3">MASONNET</button></a> <a href="https://forms.gle/dnu5f2hTgkZ8Y1Dr8"><button class="button button2">Add a meme!</button></a></p>
   <hr>
-  <!-- Meme with perfect image size (256px x 256 px). The alternate text should be entered as the meme's number (Ex: Meme 2). -->
-  <img src="meme1.png" width="256" height="256" alt="Meme 1">
-  <!-- The br tag is important, because it keeps the post information separated/spaced out. --><br>
-  <font size="2"><!-- Poster's username -->Mason Murphy<!-- Verified icon. ONLY DISPLAY THIS ON MASONNET EMPLOYEE'S ACCOUNTS!!! --><span class="material-symbols-outlined">
+  <img src="https://masonnetincusa.github.io/memegallery/meme1.png" width="256" height="256" alt="Meme 1">
+  <br>
+  <font size="2">Mason Murphy<span class="material-symbols-outlined">
 verified_user
-</span> | <!-- Date posted -->12/21/2024 | <!-- Time posted -->1:15 AM</font>
+</span> | 12/21/2024 | 1:15 AM</font>
   <hr>
   <center><font size="4">It looks like you reached the end! Don't worry, though, because we're adding more memes soon! Check again later.</font></center>
   <hr>
   <center><font size="2">Copyright &copy; 2024 MASONNET, Inc. All rights reserved.</font></center>
+
+<button onclick="myFunction()"><span class="material-symbols-outlined">
+contrast
+</span></button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
 </html>
+
