@@ -12,6 +12,56 @@ gtag('config', 'G-CE0GRK6CPS');
   <title>Meme Gallery</title>
    <link rel="icon" type="image/x-icon" href="favicon.ico">
  <style>
+  .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  .tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
 .button {
   background-color: #04AA6D; /* Green */
   border: none;
@@ -54,17 +104,21 @@ body {
   <hr>
   <img src="https://masonnetincusa.github.io/memegallery/meme1.png" width="256" height="256" alt="Meme 1">
   <br>
-  <font size="2">Mason Murphy<span class="material-symbols-outlined">
+  <font size="2">Mason Murphy<div class="tooltip"><span class="material-symbols-outlined">
 verified_user
-</span> | 12/21/2024 | 1:15 AM</font>
+</span>
+  <span class="tooltiptext">Verified</span>
+</div> | 12/21/2024 | 1:15 AM</font>
   <hr>
   <center><font size="4">It looks like you reached the end! Don't worry, though, because we're adding more memes soon! Check again later.</font></center>
   <hr>
   <center><font size="2">Copyright &copy; 2024 MASONNET, Inc. All rights reserved.</font></center>
 <!-- Dark Mode -->
-<button onclick="myFunction()"><span class="material-symbols-outlined">
+<button onclick="myFunction()"><div class="tooltip2"><span class="material-symbols-outlined">
 contrast
-</span></button>
+</span>
+  <span class="tooltiptext2">Toggle dark/light mode</span>
+</div></button>
 <!-- Dark Mode script -->
 <script>
 function myFunction() {
