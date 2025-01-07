@@ -62,6 +62,31 @@ gtag('config', 'G-CE0GRK6CPS');
 .tooltip2:hover .tooltiptext2 {
   visibility: visible;
 }
+    .tooltip3 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+}
 .button {
   background-color: #04AA6D; /* Green */
   border: none;
@@ -194,9 +219,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-</script> <a href="https://forms.gle/9miLsYvsuuZQge2m6"><button><span class="material-symbols-outlined">
+</script> <a href="https://forms.gle/9miLsYvsuuZQge2m6"><button><div class="tooltip2"><span class="material-symbols-outlined">
 chat
-</span></button></a></p>
+</span>
+  <span class="tooltiptext2">Send feedback</span>
+</div></button></a></p>
   <hr>
   <img src="https://masonnetincusa.github.io/memegallery/meme1.png" width="256" height="256" alt="Meme 1">
   <br>
