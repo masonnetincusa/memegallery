@@ -1,1 +1,288 @@
+<!DOCTYPE html>
+<html>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CE0GRK6CPS"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-CE0GRK6CPS');
+</script>
+  <title>Meme Gallery</title>
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <style>
+  .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  .tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+    .tooltip3 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+}
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+  <style>body{font-family:Arial,Helvetica,sans-serif}</style>
+  <center><img src="https://masonnetincusa.github.io/memegallery/memegallerylogo.png" width="400" height="100" alt="Meme Gallery logo" id="toggleImage"/></center> <p align="right"><a href="https://www.masonnet.org"><button class="button button3">MASONNET</button></a> <a href="https://forms.gle/dnu5f2hTgkZ8Y1Dr8"><button class="button button2">Add a meme!</button></a> <style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="button button4">Add a super meme!</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <center>
+    <p>Super Meme Pass</p>
+    <font size="2">Earn money every time that your meme gets interacted with</font>
+    <br>
+    <font size="2">Get promoted on the front page*</font>
+    <br>
+    <font size="2">Add links and a description to your meme</font>
+    <br>
+    <font size="2">Get access to our meme maker!</font>
+    <hr>
+    <button class="button button5">Buy for $5.99</button>
+    <br>
+    <font size="1">Sometimes, your meme will be promoted on the second page. If your meme is promoted on the front page, however, it will be displayed at the the top.</font>
+  </div>
+</center>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script> <a href="https://forms.gle/9miLsYvsuuZQge2m6"><button><div class="tooltip2"><span class="material-symbols-outlined">
+chat
+</span>
+  <span class="tooltiptext2">Send feedback</span>
+</div></button></a></p>
+  <hr>
+  <img src="https://masonnetincusa.github.io/memegallery/meme1.png" width="256" height="256" alt="Meme 1">
+  <br>
+  <font size="2">Mason Murphy<div class="tooltip"><span class="material-symbols-outlined">
+verified_user
+</span>
+  <span class="tooltiptext">Verified</span>
+</div> | 12/21/2024 | 1:15 AM</font> <button><span class="material-symbols-outlined">
+thumb_up
+</span></button> <button><span class="material-symbols-outlined">
+thumb_down
+</span></button>
+ <br>
+ <img src="https://masonnetincusa.github.io/MASONNET/meme2.png" width="256" height="256" alt="Meme 2">
+  <br>
+  <font size="2">Mason Murphy<div class="tooltip"><span class="material-symbols-outlined">
+verified_user
+</span>
+  <span class="tooltiptext">Verified</span>
+</div> | 1/7/2025 | 11:54 AM</font> <button><span class="material-symbols-outlined">
+thumb_up
+</span></button> <button><span class="material-symbols-outlined">
+thumb_down
+</span></button>
+  <br>
+ <img src="meme3.png" width="256" height="256" alt="Meme 3">
+  <br>
+  <font size="2">Mason Murphy<div class="tooltip"><span class="material-symbols-outlined">
+verified_user
+</span>
+  <span class="tooltiptext">Verified</span>
+</div> | 1/7/2025 | 12:02 PM</font> <button><span class="material-symbols-outlined">
+thumb_up
+</span></button> <button><span class="material-symbols-outlined">
+thumb_down
+</span></button>
+  <hr>
+  <center><font size="4">It looks like you reached the end! Don't worry, though, because we're adding more memes soon! Check again later.</font></center>
+  <hr>
+  <center><font size="2">Copyright &copy; 2025 MASONNET, Inc. All rights reserved.</font></center>
+<!-- Dark Mode -->
+<button onclick="myFunction()"><div class="tooltip2"><span class="material-symbols-outlined">
+contrast
+</span>
+  <span class="tooltiptext2">Toggle dark/light mode</span>
+</div></button>
+<!-- Dark Mode script -->
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+      var img1 = "https://masonnetincusa.github.io/memegallery/memegallerylogo.png";
+   var img2 = "https://masonnetincusa.github.io/memegallery/memegallerylogowhite.png";
+   
+   var imgElement = document.getElementById('toggleImage');
+
+   imgElement.src = (imgElement.src === img1)? img2 : img1;
+}
+</script>
+</body>
+</html>
 
